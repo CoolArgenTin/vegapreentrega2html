@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia</title>
+    <meta name="description" content="Canjea entradas para el proximo partido de Estudiantes de La Plata">
+    <meta name="keywords" content="estudiantes, estudiantes de la plata, edlp, futbol, boleteria">
+    <title>Boleteria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
     <header>
-        <h2>Club Estudiantes de La Plata</h2>
+        <h2 onclick="window.location.href='../index.html';" style="cursor: pointer;">Club Estudiantes de La Plata</h2>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,35 +43,40 @@
     </header>
 
     <main>
-        <h3>Proximo partido contra:</h3>
-        <img src="../img/defensa.png" alt="Escudo Defensa y Justicia">
-        <br>
-        <p>
-            DEFENSA Y JUSTICIA (De Local)
-        </p>
-        <!-- "Descripción" del rival -->
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rerum quis, modi ex exercitationem quia culpa ab quaerat cum id saepe natus dolorem deserunt ad alias quisquam accusamus dignissimos cumque!
+        <h3 class="animate__animated animate__fadeIn">Proximo partido contra:</h3>
+        <div class="animate__animated animate__backInUp animate__delay-1s">
+            <img src="../img/defensa.png" alt="Escudo Defensa y Justicia">
+            <br>
+            <p>
+                DEFENSA Y JUSTICIA (De Local)
+            </p>
+        </div>
+        <!-- "Descripción" del partido -->
+        <p class="animate__animated animate__fadeIn animate__delay-2s">
+            El partido corresponde al Torneo Apertura 2025, se jugara a las 17:30hs en el Estadio "UNO" Jorge Luis Hirschi 
         </p>
 
         <!-- Lista con "Entradas". Lo hice con texto y no links porque no vi necesario hacer htmls para cada una, y lo deje como ejemplo -->
         <div class="botones">
-            ENTRADAS: 
+            <h6 class="animate__animated animate__fadeIn animate__delay-3s">ENTRADAS: </h6>
             <ul>
                <li>
-                    POPULAR 55
+                    <a href="#" class="animate__animated animate__bounceIn animate__delay-5s">POPULAR 55</a>
                </li>
                <li>
-                    POPULAR 57
+                    <a href="#" class="animate__animated animate__bounceIn animate__delay-5s">POPULAR 57</a>
                </li>
                <li>
-                    PLATEA 115
+                <a href="#" class="animate__animated animate__bounceIn animate__delay-5s">CODO 57</a>
+            </li>
+               <li>
+                    <a href="#" class="animate__animated animate__bounceIn animate__delay-5s">PLATEA 115</a>
                </li>
                <li>
-                    PALCOS 1
+                    <a href="#" class="animate__animated animate__bounceIn animate__delay-5s">PALCOS UNO</a>
                </li>
                <li>
-                    EXPERIENCIA CAMPO
+                    <a href="#" class="animate__animated animate__bounceIn animate__delay-5s">EXPERIENCIA CAMPO</a>
                </li>
             </ul>
         </div>

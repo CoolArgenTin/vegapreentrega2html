@@ -1,0 +1,27 @@
+@media screen and (min-width: 901px){
+    img{
+        width: 30%;
+        height: auto;
+        margin: 10px;
+    }
+    
+    main .titulos {
+        display: grid;
+        grid-template-columns: repeat(4, 3fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: 10%;
+    }
+
+    .imgtit{
+        width: 40%;
+        height: 60%;
+    }
+
+    div{
+        ul{
+            display: grid;
+            grid-template-columns: repeat(2, 15%);
+            grid-template-rows: repeat(3, 25%)
+        }
+    }
+}

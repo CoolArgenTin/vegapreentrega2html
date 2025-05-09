@@ -1,0 +1,54 @@
+
+@import "../abstracts/mixin", "../abstracts/variables";
+
+
+
+header{
+    @include headerfooter;
+    @include flex;
+    justify-content: space-between;
+}
+
+main{
+    @include centro;
+    p, h3, h4{
+        color: $rojo-edlp;
+        letter-spacing: 1px;
+    }
+    .botones{
+        font-family: 'Times New Roman', Times, serif;
+        font: bolder;
+        text-align: left;
+        margin: 2px;
+    }
+}
+
+footer{
+    @include headerfooter;
+    h4{
+        text-align: center;
+    }
+}
+
+a{
+    @include estiloboton($rojo-edlp, white);
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    li{
+        list-style: none;
+        margin: 10px;
+    }
+}
+
+li:hover{
+    a:hover{
+        @include estiloboton(darkred, darkgray)
+    }
+}
+
+.nav-link {
+    color: white !important;
+}

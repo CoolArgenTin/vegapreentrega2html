@@ -1,0 +1,28 @@
+@import "./variables";
+
+@mixin centro{
+text-align: center;
+justify-content: center;
+align-items: center;
+};
+
+@mixin flex{
+    display: flex;
+    align-items: center;
+};
+
+@mixin headerfooter{
+    background-color: $rojo-edlp;
+    padding: 30px 20px;
+    color: white;
+}
+
+@mixin estiloboton($fondo, $letra){
+    margin: 5px; 
+    padding: 10px; 
+    background-color: $fondo; 
+    color: $letra;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+}

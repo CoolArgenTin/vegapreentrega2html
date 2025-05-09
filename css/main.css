@@ -1,0 +1,129 @@
+/* Reset del margin, padding y box */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(237, 20, 30);
+  padding: 30px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+main p, main h3, main h4 {
+  color: rgb(237, 20, 30);
+  letter-spacing: 1px;
+}
+main .botones {
+  font-family: "Times New Roman", Times, serif;
+  font: bolder;
+  text-align: left;
+  margin: 2px;
+}
+
+footer {
+  background-color: rgb(237, 20, 30);
+  padding: 30px 20px;
+  color: white;
+}
+footer h4 {
+  text-align: center;
+}
+
+a {
+  margin: 5px;
+  padding: 10px;
+  background-color: rgb(237, 20, 30);
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+  margin: 10px;
+}
+
+li:hover a:hover {
+  margin: 5px;
+  padding: 10px;
+  background-color: darkred;
+  color: darkgray;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+@media screen and (min-width: 901px) {
+  img {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+  }
+  main .titulos {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 10%;
+  }
+  .imgtit {
+    width: 40%;
+    height: 60%;
+  }
+  div ul {
+    display: grid;
+    grid-template-columns: repeat(2, 15%);
+    grid-template-rows: repeat(3, 25%);
+  }
+}
+@media screen and (max-width: 900px) {
+  img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  main .titulos {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-top: 10%;
+  }
+  .largo {
+    grid-column: span 3;
+  }
+  .imgtit {
+    width: 80%;
+    height: 80%;
+  }
+  main .estadios {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 27%);
+  }
+  .estadiolargo {
+    grid-column: span 2;
+  }
+  div ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

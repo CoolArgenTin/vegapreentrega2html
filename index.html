@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina principal del Club Estudiantes de La Plata">
+    <meta name="keywords" content="estudiantes, estudiantes de la plata, edlp, futbol, inicio">
     <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <header>
-        <h2>Club Estudiantes de La Plata</h2>
+        <h2 onclick="window.location.href='./index.html';" style="cursor: pointer;">Club Estudiantes de La Plata</h2>
 
         <!-- Menu hamburguesa proveniente de Bootstrap, editado ligeramente para que encaje con el estilo de la pagina y los links a los diferentes htmls -->
 
@@ -43,30 +46,32 @@
     </header>
 
     <main>
-        <img src="./img/edlp.png" alt="Escudo de Estudiantes de La Plata">
-        <h5>Bienvenido a la pagina del Club Estudiantes de La Plata</h5>
-        <p>Aqui encontraras información relacionada al club, su historia y logros, como también un apartado dedicado <br>
-        a comprar entradas para el proximo partido a disputarse en condición de visitante.<br><br>
-        Puedes acceder a las distintas secciones de nuestro sitio web a través de los siguientes botones o por los<br>
-        que se ubican en la parte superior y derecha de la pantalla:</p>
+        <div class="animate__animated animate__fadeInUp">
+            <img src="./img/edlp.png" alt="Escudo de Estudiantes de La Plata">
+            <h5>Bienvenido a la pagina del Club Estudiantes de La Plata</h5>
+            <p>Aqui encontraras información relacionada al club, su historia y logros, como también un apartado dedicado <br>
+            a comprar entradas para el proximo partido a disputarse en condición de visitante.<br><br>
+            Puedes acceder a las distintas secciones de nuestro sitio web a través de los siguientes botones o por los<br>
+            que se ubican en la parte superior y derecha de la pantalla:</p>
+        </div>
         <nav>
             <!-- Botones para navegar por las paginas -->
             <ul>
                 <li>
-                    <a href="./pages/historia.html">HISTORIA</a>
+                    <a href="./pages/historia.html" class="animate__animated animate__zoomIn animate__delay-1s">HISTORIA</a>
                 </li>
                 <li>
-                    <a href="./pages/titulos.html">TITULOS</a>
+                    <a href="./pages/titulos.html" class="animate__animated animate__zoomIn animate__delay-2s">TITULOS</a>
                 </li>
                 <li>
-                    <a href="./pages/estadio.html">ESTADIO</a>
+                    <a href="./pages/estadio.html" class="animate__animated animate__zoomIn animate__delay-3s">ESTADIO</a>
                 </li>
                 <li>
-                    <a href="./pages/boleteria.html">BOLETERIA</a>
+                    <a href="./pages/boleteria.html" class="animate__animated animate__zoomIn animate__delay-4s">BOLETERIA</a>
                 </li>
             </ul>
         </nav>
-        <p>En caso de haber algun error o falla en el sistema, hacer el favor de contactar con el servicio tecnico:<br><br>
+        <p class="animate__animated animate__fadeInUp animate__delay-5s">En caso de haber algun error o falla en el sistema, hacer el favor de contactar con el servicio tecnico:<br>
             Tel: (0221) 555-7528<br>
             Email: EstudiantesLaPlata@gmail.com</p>
     </main>

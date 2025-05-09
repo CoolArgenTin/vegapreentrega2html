@@ -1,0 +1,43 @@
+@media screen and (max-width: 900px){
+    img{
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    main .titulos {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin-top: 10%;
+    }
+
+    .largo{
+        grid-column: span 3;
+    }
+
+    .imgtit{
+        width: 80%;
+        height: 80%;
+    }
+
+    main .estadios {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 27%);
+    }
+
+    .estadiolargo{
+        grid-column: span 2;
+    }
+
+    div{
+        ul{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr)
+        }
+    }
+}
